@@ -1,0 +1,236 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    background: white;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Raleway', Arial, Helvetica, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #CFB0A1;
+    margin-top: 3%;
+}
+
+p {
+    font-size: 1.2em;
+    color: #707070;
+    line-height: 1.8;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 2em;
+    color: #707070;
+}
+
+hr {
+    width: 10%;
+    margin: auto;
+    border: 1px solid #CFB0A1;
+}
+
+a:link, a:visited {
+    color: #CFB0A1;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #988446;
+}
+
+button {
+  color: #ffffff;
+  font-size: 20px;
+  background: #CFB0A1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+    background-color:#ae8775;
+}
+
+input,
+textarea {
+    font-family: 'Raleway', Arial, Helvetica, Verdana, sans-serif;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 0.9em;
+    color: #ae8775;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #707070;
+}
+
+.logo {
+  grid-column: 3;
+  background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90px;
+}
+
+#navLinks {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #707070;
+}
+
+#navLinks:hover {
+  color: #CFB0A1;
+  padding: 1em 1em;
+  border-bottom: solid 2px #CFB0A1;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-position: 50%;
+    background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
+    background-size: cover;
+}
+
+.fade-in {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    width: 60%;
+    animation: fadeIn 3s;
+}
+
+.gallery {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+.grid-img:hover {
+    opacity: 0.8;
+}
+
+    .tall {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .a {
+        grid-column: 3 / -1 ;
+        grid-row: 1;
+    }
+
+    .b {
+        grid-column: 3 / -1;
+        grid-row: 2 ;
+    }
+
+.travel {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    }
+
+    .travel-card {
+        align-self: end;
+    }
+
+.fly .drive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+.registry {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    }
+
+.registryimg {
+    width: 90%;
+    }
+
+
+.travel-btn {
+    color: #ffffff;
+    font-size: 20px;
+    background: #988446;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.travel-btn:hover {
+    background: #BAA669;
+}
+
+.form {
+    font-size: 1.4em;
+    line-height: 2.2em;
+}
+
+.submit {
+    color: #ffffff;
+    font-size: 20px;
+    background: #CFB0A1;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.submit:hover {
+    background-color:#ae8775;
+}
+
+/* CSS Animations Section */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
