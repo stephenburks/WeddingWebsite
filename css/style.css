@@ -1,9 +1,11 @@
+/* Element Selectors */
+
 body {
     margin: 0px;
     padding: 0px;
 }
 
-nav {
+/* nav {
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -16,6 +18,14 @@ nav {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
     -moz-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
     box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+} */
+
+.menu ul {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax (100px, 1fr));
 }
 
 h1,
@@ -89,15 +99,8 @@ textarea {
     border-bottom: 1px solid #707070;
 }
 
-.logo {
-  grid-column: 3;
-  background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 90px;
-}
 
+/* ID Selectors */
 #navLinks {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
@@ -109,6 +112,17 @@ textarea {
   color: #CFB0A1;
   padding: 1em 1em;
   border-bottom: solid 2px #CFB0A1;
+}
+
+
+/* Class Selectors */
+.logo {
+  grid-column: 3;
+  background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90px;
 }
 
 .hero {
@@ -124,7 +138,7 @@ textarea {
     bottom: 8px;
     right: 16px;
     width: 60%;
-    animation: fadeIn 3s;
+    animation: fadeIn 3.5s;
 }
 
 .gallery {
@@ -172,11 +186,10 @@ textarea {
         align-self: end;
     }
 
-.fly .drive {
-    width: 100%;
-    height: 100%;
+.fly.drive {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     }
 
 .registry {
@@ -188,9 +201,13 @@ textarea {
     }
 
 .registryimg {
-    width: 90%;
+    transition: all .2s ease-in-out;
+    width: 80%;
     }
 
+.registryimg:hover {
+    transform: scale(1.1);
+    }    
 
 .travel-btn {
     color: #ffffff;
@@ -234,3 +251,6 @@ textarea {
         opacity: 1;
     }
 }
+
+/* Media Queries */
+
