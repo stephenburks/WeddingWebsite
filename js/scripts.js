@@ -25,3 +25,19 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+// Form Submission To Google Forms
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxtqeT8hpJLDuzM1tcbJ0m3eksIn7cM3GV-vw9ph8e-At0dxGk/exec'
+
+$('#submit-form').on('click', function (e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+    }).success(
+        // do something
+    );
+})
