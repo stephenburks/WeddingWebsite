@@ -99,6 +99,17 @@ textarea {
     border-bottom: 1px solid #707070;
 }
 
+<<<<<<< HEAD
+=======
+.logo {
+  grid-column: 3;
+  background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90px;
+}
+>>>>>>> e3b1a338a563348660328cc0839b47b94f3bb349
 
 /* ID Selectors */
 #navLinks {
@@ -130,6 +141,7 @@ textarea {
     width: 100%;
     background-position: 50%;
     background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
+    background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
     background-size: cover;
 }
 
@@ -251,6 +263,9 @@ textarea {
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 
 /* Media Queries */
 
+=======
+>>>>>>> e3b1a338a563348660328cc0839b47b94f3bb349
