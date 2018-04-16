@@ -91,7 +91,7 @@ textarea {
 
 .logo {
   grid-column: 3;
-  background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
+  background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ textarea {
     height: 100vh;
     width: 100%;
     background-position: 50%;
-    background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
+    background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
     background-size: cover;
 }
 
