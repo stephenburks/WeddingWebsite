@@ -1,4 +1,8 @@
-/* Element Selectors */
+/* ---------------------
+    Element Selectors 
+-----------------------*/
+
+/* Body Formatting */
 html,header, footer, body, nav, div, img, a,ul, li, h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
 	padding: 0;
@@ -8,22 +12,13 @@ html,header, footer, body, nav, div, img, a,ul, li, h1, h2, h3, h4, h5, h6, p{
     text-align: center;
 }
 
-a:link, a:visited{
-	color:#707070;
-	transition: .2s color ease-in-out;
-}
-a:hover, a:active{
-	color: #888;
-}
-
 h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     color: #CFB0A1;
     margin: 3%;
 }
-
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: #707070;
     margin: 3%;
 }
@@ -37,9 +32,18 @@ hr {
 p {
     font-size: 1.2em;
     color: #707070;
-    line-height: 1.8;
+    line-height: 1.6;
     margin: 3% 5%;
 }
+
+a:link, a:visited{
+	color:#707070;
+	transition: .2s color ease-in-out;
+}
+a:hover, a:active{
+	color: #888;
+}
+
 
 a:link, a:visited {
     color: #CFB0A1;
@@ -75,11 +79,26 @@ textarea {
     border-bottom: 1px solid #707070;
 }
 
-/* ID Selectors */
+header{
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+}
+
+/* -----------------
+    ID Selectors 
+-------------------*/
+
+/* Navigation Styles Selectors */
 #navLinks{
   color:#707070;
   text-decoration:none;
-  padding:15px;
+  padding:25px;
   font-size:1.3em;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -91,20 +110,71 @@ textarea {
   border-bottom:4px solid #CFB0A1;
 }
 
-/* Class Selectors */
+/*-------------------
+    Class Selectors
+---------------------*/
+
+/* Navigation Class Selectors */
 .anchor {
     padding-top: 70px;
     margin-top: -70px;
 }
-.logo {
-  grid-column: 3;
-  background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:good/v1523517787/Wedding-Chris%2BHannah/hannah_and_chris-min.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 90px;
+
+.toggle-menu{
+	display: none;
 }
 
+
+.site-title img{
+	max-width: 100px;
+}
+
+.nav-list{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+}
+.nav-list > li {
+	position: relative;
+}
+
+.nav-list>li:not(.has-logo)>a{
+	display: block;
+}
+
+.nav-list ul{
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+	line-height: 2rem;
+}
+
+.nav-list ul a{
+	font-weight: normal;
+	display: block;
+	padding: .5rem 1rem;	
+}
+
+.nav-list > li:hover a + ul{
+	left: 0;
+	top:100%;
+}
+
+.tablet-display{
+    display:none;
+}
+
+.mobile-display{
+    display:none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Landing Section Class Selectors */
 .hero {
     height: 100vh;
     width: 100%;
@@ -121,6 +191,7 @@ textarea {
     animation: fadeIn 3.5s;
 }
 
+/* Gallery Section Class Selectos */
 .gallery {
     margin: 25px;
     display: grid;
@@ -154,6 +225,7 @@ textarea {
         grid-row: 2 ;
     }
 
+/* Accommodations Section Class Selectors */
 .travel {
     margin: 25px;
     display: grid;
@@ -165,13 +237,21 @@ textarea {
     .travel-card {
         align-self: end;
     }
-/* 
-.fly.drive {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    } */
 
+    .travel-btn {
+    color: #ffffff;
+    font-size: 20px;
+    background: #988446;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.travel-btn:hover {
+    background: #BAA669;
+}
+
+/* Registry Section Class Selectors */
 .registry {
     margin: 25px;
     display: grid;
@@ -189,19 +269,8 @@ textarea {
     transform: scale(1.1);
     }    
 
-.travel-btn {
-    color: #ffffff;
-    font-size: 20px;
-    background: #988446;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    border: none;
-}
 
-.travel-btn:hover {
-    background: #BAA669;
-}
-
+/* Forms Section Class Selectors */
 .form {
     font-size: 1.4em;
     line-height: 2.2em;
@@ -221,78 +290,10 @@ textarea {
 }
 
 
-.toggle-menu{
-	display: none;
-}
-header{
-    margin: auto;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    background: #FFF;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
-    box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
-}
-.site-title img{
-	max-width: 100px;
-	display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-}
-
-.nav-list{
-	display: flex;
-	flex-flow: row;
-	justify-content: space-evenly;
-	align-items: center;
-	white-space: nowrap;
-}
-.nav-list > li {
-	position: relative;
-}
-
-.nav-list>li:not(.has-logo)>a{
-	display: block;
-	padding:1rem;
-}
-
-.nav-list ul{
-	position: absolute;
-	z-index: 10;
-	background-color: #fff;
-	line-height: 2rem;
-	left: -9999px;	
-}
-
-.nav-list ul a{
-	font-weight: normal;
-	display: block;
-	padding: .5rem 1rem;	
-}
-
-.nav-list > li:hover a + ul{
-	left: 0;
-	top:100%;
-}
-
-.tablet-display{
-    display:none;
-}
-
-.mobile-display{
-    display:none;
-}
-
+/* -------------------
+    Media Queries
+---------------------- */
 @media only screen and (max-width: 900px){
-	.has-logo{
-		display: none;
-	}
-	.tablet-display {
-        display: block;
-		margin:auto;
-		text-align: center;
-    }
     
     .registry {
     margin: 25px;
@@ -307,14 +308,16 @@ header{
     }
 }
 @media only screen and (max-width: 650px){
-    .tablet-display{
-        display:none;
-    }
+
+    .has-logo{
+		display: none;
+	}
     
     .mobile-display {
         display: block;
 		margin:auto;
-		float: left;
+        float: left;
+        vertical-align: center;
 	}
     
     .toggle-menu{
@@ -322,13 +325,13 @@ header{
 		max-width: -webkit-min-content;
 		max-width: -moz-min-content;
 		max-width: min-content;
-		margin: 5% auto;
+		margin: 3% 5% auto;
 		background-color: #ae8775;
         text-align: center;
+        vertical-align: center;
         float: right;
 		color: #fff !important;
         padding: 1rem;
-        margin-right: 10%;
 		border-radius: .25em;
 
 	}
@@ -376,8 +379,12 @@ header{
     .fly.drive {
         max-width: 50%;
     }
-}
 
+    .mobile-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 
 /* CSS Animations Sections */
