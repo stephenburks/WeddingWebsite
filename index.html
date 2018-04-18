@@ -212,35 +212,26 @@
         <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
         <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRqPF5sw_w6uUNx9RRHnrEEmD4Uiubr3TEz4qeQnMWKrzZwtZz/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const loading = document.querySelector('.js-loading')
-            const successMessage = document.querySelector('.js-success-message')
-            const errorMessage = document.querySelector('.js-error-message')
+    const scriptURL = 'https://script.google.com/a/stylesheets.co/macros/s/AKfycbzl3hk6JfWqMkVz8S1p5Txky_fscyNWJUCuQQHGHfVP5YLH99A/exec'
+    const form = document.forms['submit-to-google-sheet']
 
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-            })
-           
-            function showLoadingIndicator () {
-               form.classList.add('is-hidden')
-               loading.classList.remove('is-hidden')
-            }
-             function showSuccessMessage (response) {
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+    
+    function showSuccessMessage (response) {
       console.log('Success!', response)
-      window.location = "http://www.yoururl.com";
+      window.location = "https://www.success.com/";
     }
-            }
-            function showErrorMessage (error) {
-                console.error('Error!', error.message)
-                    setTimeout(() => {
-                        errorMessage.classList.remove('is-hidden')
-                        loading.classList.add('is-hidden')
-                }, 500)
-            }
-       </script>
+
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      window.location = "https://blog.hubspot.com/blog/tabid/6307/bid/33766/10-clever-website-error-messages-from-creative-companies.aspx";
+    }
+  </script>
     </body>
 </html>
