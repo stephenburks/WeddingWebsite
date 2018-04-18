@@ -154,6 +154,15 @@
                 <h1>RSVP</h1>
                 <hr>
                 <br>
+                <div class="loading js-loading is-hidden">
+                      <div class="loading-spinner">
+                        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+                      </div>
+                    </div>
+
+                    <p class="js-success-message is-hidden">Success, your RSVP has been sent!!</p>
+                    <p class="js-error-message is-hidden">Oops! It looks like there was an error sending your RSVP. Please hit refresh and try again, if the problem persits - email Stephen at stephen@methodicaldesigns.com and he will get you all squared away :)</p>
+                </div>
                   <div class="form-container rsvp-form">
                     <form name="submit-to-google-sheet">
                       <h2>Please kindly respond by September 21, 2018</h2>
@@ -185,14 +194,6 @@
                         <br>
                         <button type="submit" class="submit">Send It!</button>
                     </form>
-                    <div class="loading js-loading is-hidden">
-                      <div class="loading-spinner">
-                        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
-                      </div>
-                    </div>
-
-                    <p class="js-success-message is-hidden">Success!</p>
-                    <p class="js-error-message is-hidden">Error!</p>
               </div>
         </section>
         </main>
