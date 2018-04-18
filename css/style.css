@@ -179,7 +179,7 @@ header{
     height: 100vh;
     width: 100%;
     background-position: 50%;
-    background-image: url("http://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
+    background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
     background-size: cover;
 }
 
@@ -397,3 +397,56 @@ header{
         opacity: 1;
     }
 }
+
+
+/* ------------------------------------------
+	Added Form Animations
+	Shout Out Jamie Wilson
+	https://github.com/jamiewilson
+---------------------------------------------*/
+
+.is-hidden {
+      display: none !important;
+    }
+
+@keyframes rotate {
+     100% { transform: rotate(360deg); }
+    }
+
+    @keyframes dash {
+     0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; }
+     50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; }
+     100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; }
+    }
+
+    .loading {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+    }
+
+    .loading-spinner svg {
+      position: relative;
+      animation: rotate 2s linear infinite;
+      height: 50px;
+      width: 50px;
+    }
+
+    .loading-spinner circle {
+      stroke: #CFB0A1;
+      stroke-dasharray: 1,200;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      animation: dash 1.5s ease-in-out infinite;
+    }
