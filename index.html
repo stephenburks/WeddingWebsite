@@ -229,12 +229,12 @@
                form.classList.add('is-hidden')
                loading.classList.remove('is-hidden')
             }
-            function showSuccessMessage (response) {
-                console.log('Success!', response)
-                    setTimeout(() => {
-                        successMessage.classList.remove('is-hidden')
-                        loading.classList.add('is-hidden')
-            }, 500)
+             function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        document.write('Success! Your RSVP Has Been Sent!')
+      }, 500)
+    }
             }
             function showErrorMessage (error) {
                 console.error('Error!', error.message)
