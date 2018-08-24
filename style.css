@@ -1,0 +1,469 @@
+/* ---------------------
+    Element Selectors 
+-----------------------*/
+
+/* Body Formatting */
+html,header, footer, body, nav, div, img, a,ul, li, h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', Arial, Helvetica, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #CFB0A1;
+    margin: 3%;
+}
+h2 {
+    font-size: 1.8em;
+    color: #707070;
+    margin: 3%;
+}
+
+hr {
+    width: 10%;
+    margin: auto;
+    border: 1px solid #CFB0A1;
+}
+
+p {
+    font-size: 1.2em;
+    color: #707070;
+    line-height: 1.6;
+    margin: 3% 5%;
+}
+
+a:link, a:visited{
+	color:#707070;
+	transition: .2s color ease-in-out;
+}
+a:hover, a:active{
+	color: #888;
+}
+
+
+a:link, a:visited {
+    color: #CFB0A1;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #988446;
+}
+
+button {
+  color: #ffffff;
+  font-size: 20px;
+  background: #CFB0A1;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+    background-color:#ae8775;
+}
+
+input,
+textarea {
+    font-family: 'Raleway', Arial, Helvetica, Verdana, sans-serif;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 0.9em;
+    color: #ae8775;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #707070;
+}
+
+header{
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+    box-shadow: 0px 2px 2px 0px rgba(181,181,181,1);
+}
+
+/* -----------------
+    ID Selectors 
+-------------------*/
+
+/* Navigation Styles Selectors */
+#navLinks{
+  color:#707070;
+  text-decoration:none;
+  padding:25px;
+  font-size:1.3em;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  
+}
+#navLinks:hover{
+  color:#CFB0A1;
+  border-bottom:4px solid #CFB0A1;
+}
+
+/*-------------------
+    Class Selectors
+---------------------*/
+
+/* Navigation Class Selectors */
+.anchor {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+.toggle-menu{
+	display: none;
+}
+
+
+.site-title img{
+	max-width: 100px;
+}
+
+.nav-list{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+}
+.nav-list > li {
+	position: relative;
+}
+
+.nav-list>li:not(.has-logo)>a{
+	display: block;
+}
+
+.nav-list ul{
+	position: absolute;
+	z-index: 10;
+	background-color: #fff;
+	line-height: 2rem;
+}
+
+.nav-list ul a{
+	font-weight: normal;
+	display: block;
+	padding: .5rem 1rem;	
+}
+
+.nav-list > li:hover a + ul{
+	left: 0;
+	top:100%;
+}
+
+.tablet-display{
+    display:none;
+}
+
+.mobile-display{
+    display:none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Landing Section Class Selectors */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-position: 50%;
+    background-image: url("https://res.cloudinary.com/dcvupifbk/image/upload/f_auto,q_auto:best/v1523518122/HeaderImage-min.jpg");
+    background-size: cover;
+}
+
+.fade-in {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    width: 60%;
+    animation: fadeIn 3.5s;
+}
+
+/* Gallery Section Class Selectos */
+.gallery {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+.grid-img:hover {
+    opacity: 0.8;
+}
+
+    .tall {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .a {
+        grid-column: 3 / -1 ;
+        grid-row: 1;
+    }
+
+    .b {
+        grid-column: 3 / -1;
+        grid-row: 2 ;
+    }
+
+/* Accommodations Section Class Selectors */
+.travel {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    }
+
+    .travel-card {
+        align-self: end;
+    }
+
+    .travel-btn {
+    color: #ffffff;
+    font-size: 20px;
+    background: #988446;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.travel-btn:hover {
+    background: #BAA669;
+}
+
+/* Registry Section Class Selectors */
+.registry {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    }
+
+.registryimg {
+    transition: all .2s ease-in-out;
+    width: 80%;
+    }
+
+.registryimg:hover {
+    transform: scale(1.1);
+    }    
+
+
+/* Forms Section Class Selectors */
+.form {
+    font-size: 1.4em;
+    line-height: 2.2em;
+}
+
+.submit {
+    color: #ffffff;
+    font-size: 20px;
+    background: #CFB0A1;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.submit:hover {
+    background-color:#ae8775;
+}
+
+
+/* -------------------
+    Media Queries
+---------------------- */
+@media only screen and (max-width: 900px){
+    
+    .registry {
+    margin: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+
+    .registryimg {
+    width: 50%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .travel {
+        margin: 25px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px){
+
+    .has-logo{
+		display: none;
+	}
+    
+    .mobile-display {
+        display: block;
+		margin:auto;
+        float: left;
+        vertical-align: center;
+	}
+    
+    .toggle-menu{
+		display: block;
+		max-width: -webkit-min-content;
+		max-width: -moz-min-content;
+		max-width: min-content;
+		margin: 3% 5% auto;
+		background-color: #ae8775;
+        text-align: center;
+        vertical-align: center;
+        float: right;
+		color: #fff !important;
+        padding: 1rem;
+		border-radius: .25em;
+
+	}
+
+	.toggle-menu:hover{background-color: #CFB0A1;}
+
+	.nav-list{
+		display: block;
+		width: 100%;
+		position: static;
+		line-height: 1rem;
+		z-index: 10;
+		left: 0;
+		top:0;
+		background-color: #fff;
+		max-height: 0;
+		overflow: hidden;
+	
+	}
+
+	.active{
+		max-height: 100%;
+		overflow: auto;
+	}
+
+
+	.nav-list  ul{
+		position: static;
+		text-indent: 2rem;
+		z-index: 10;
+    }
+
+    .fade-in {
+        width: 70%;
+    }
+
+    .fly.drive {
+        max-width: 50%;
+    }
+
+    .mobile-padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* CSS Animations Sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ------------------------------------------
+	Added Form Animations
+	Shout Out Jamie Wilson
+	https://github.com/jamiewilson
+---------------------------------------------*/
+
+    .form-container {
+      padding: 2rem;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+
+    .is-hidden {
+      display: none !important;
+    }
+
+
+    @keyframes rotate {
+     100% { transform: rotate(360deg); }
+    }
+
+    @keyframes dash {
+     0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; }
+     50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; }
+     100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; }
+    }
+
+    .loading {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+    }
+
+    .loading-spinner svg {
+      position: relative;
+      animation: rotate 2s linear infinite;
+      height: 50px;
+      width: 50px;
+    }
+
+    .loading-spinner circle {
+      stroke: #CFB0A1;;
+      stroke-dasharray: 1,200;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      animation: dash 1.5s ease-in-out infinite;
+    }
